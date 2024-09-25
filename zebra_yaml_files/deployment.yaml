@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: zebraargocd
+  name: zebraargocd-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zebraargocd
+  template:
+    metadata:
+      labels:
+        app: zebraargocd
+    spec:
+      containers:
+      - image: ascomappsuite.azurecr.io/zebraconsole:latest
+        name: zebraargocd
