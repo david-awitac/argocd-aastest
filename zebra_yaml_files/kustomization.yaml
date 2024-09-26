@@ -5,4 +5,4 @@ images:
   newName: ascomappsuite.azurecr.io/zebraconsole:latest
   newTag: latest
 resources:
-- _deployment.yaml
+  - deployment.yaml
