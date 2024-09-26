@@ -15,5 +15,5 @@ spec:
         app: zebraargocd
     spec:
       containers:
-      - image: ascomappsuite.azurecr.io/zebraconsole:latest
+      - image: ascomappsuite.azurecr.io/nordics/mapnextgen:latest
         name: zebraargocd
